@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <p class="lead">Assignment by Ray Jerard Rosure.</p>
+    <p class="lead">Start Time: 1:33 PM</p>
+    <p class="lead">End Time: 2:44 PM</p>
+    <p class="lead">“Please write an MVC web application that will have one button, which upon clicking would increase a counter visible on the screen. The user should not be able to increase the count beyond 10. You will need to store the counter information in an SQL database. Please provide all the files/artefacts you produced while working on this application. Please provide all the files/artefacts necessary for successful installation and running of this application. The application should be in version control using GIT and pushed to a Github (or similar) public repository. All the files we will pull from that Github (similar) repository.”</p>
+
+</div>
+<div class="jumbotron">
+    @using PerpetuumSoft.Knockout
+    @model FlatPlanet.Models.ClickCounterModel
+
+    @{
+        var ko = Html.CreateKnockoutContext();
+    }
+    <div>You've clicked @ko.Html.Span(m => m.NumberOfClicks) times</div>
+    @ko.Html.Button("Click me", "RegisterClick", "Home").Disable(m => m.HasClickedTooManyTimes)
+    <div @ko.Bind.Visible(m => m.HasClickedTooManyTimes)>
+        That's too many clicks! The user should not be able to increase the count beyond 10.
+        @ko.Html.Button("Reset", "ResetClicks", "Home")
+    </div>
+
+    @ko.Apply(Model)
+</div>

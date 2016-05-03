@@ -1,0 +1,4 @@
+C:\Users\Ray Rosure\Desktop\FlatPlanet\FlatPlanet.Infrastructure\bin\Debug\FlatPlanet.Infrastructure.dll
+C:\Users\Ray Rosure\Desktop\FlatPlanet\FlatPlanet.Infrastructure\bin\Debug\FlatPlanet.Infrastructure.pdb
+C:\Users\Ray Rosure\Desktop\FlatPlanet\FlatPlanet.Infrastructure\obj\Debug\FlatPlanet.Infrastructure.dll
+C:\Users\Ray Rosure\Desktop\FlatPlanet\FlatPlanet.Infrastructure\obj\Debug\FlatPlanet.Infrastructure.pdb
